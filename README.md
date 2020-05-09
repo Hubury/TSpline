@@ -10,7 +10,7 @@ to be continued:
 2. knot insertion and knot removal
 3. degree elevation and degree reduction
 4. NURBS curve and surface fitting
-5. T-Spline (it's hard ...)
+5. T-Spline 
 
 
 This project's cmake structure is from [libigl/libigl-example-project](https://github.com/libigl/libigl-example-project), which is a blank project example showing how to use libigl and cmake. 
