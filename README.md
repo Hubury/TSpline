@@ -7,8 +7,9 @@ Existing functions:
 3. readIO and writeIO 
 4. knot insertion and knot removal
 5. degree elevation and degree reduction
-6. NURBS curve and surface fitting
-7. T-Spline skinning for surface and solid generation
+6. NURBS curve, surface and solid fitting
+7. T-Spline surface and solid fitting
+8. T-Spline skinning for surface and solid generation
 
 
 This project's cmake structure is from [libigl/libigl-example-project](https://github.com/libigl/libigl-example-project), which is a blank project example showing how to use libigl and cmake. 
