@@ -1,16 +1,4 @@
-# NURBS
-A really simple NURBS library based on libigl. [libigl](https://github.com/libigl/libigl/) is a simple C++ geometry processing library, and I use it mainly for displaying the NURBS curve and surface.
-
-Existing functions:
-1. compute points on curve or surface with parameters 
-2. display NURBS curve and surface by libigl
-3. readIO and writeIO 
-4. knot insertion and knot removal
-5. degree elevation and degree reduction
-6. NURBS curve, surface and solid fitting
-7. T-Spline surface and solid fitting
-8. T-Spline skinning for surface and solid generation
-
+It is highly recommended to compile and run this project on Windows operating system. And the specified compilation platform is Visual Studio 2015.
 
 This project's cmake structure is from [libigl/libigl-example-project](https://github.com/libigl/libigl-example-project), which is a blank project example showing how to use libigl and cmake. 
 
@@ -18,6 +6,23 @@ This project's cmake structure is from [libigl/libigl-example-project](https://g
 
 Then build, run and understand the [libigl
 tutorial](http://libigl.github.io/libigl/tutorial/).
+
+## libigl download
+```
+git clone https://github.com/libigl/libigl
+cd libigl
+git checkout db6c89aa0acb6c9bd772951f2275c19bc2267054
+```
+
+## Build libigl
+
+    mkdir build
+    cd build
+    cmake ..
+    make
+    
+Compile this project using the standard cmake routine:
+On Windows, use Cmake-gui to generate a solution for VS2015, and compile it.
 
 ## Compile
 After downloading and installing libigl, you need to add the Path of libigl to this project by modifying `FindLIBIGL.cmake`
@@ -43,22 +48,9 @@ find_path(LIBIGL_INCLUDE_DIR igl/readOBJ.h
 )
 
 ```
-Compile this project using the standard cmake routine:
+Compile this project using the standard cmake routine.
+On Windows, use Cmake-gui to generate a solution for VS2015. It will be appeared a file (Tspline.sln) in the build directory. Compile and run it with VS2015.
 
-    mkdir build
-    cd build
-    cmake ..
-    make
-
-This should find and build the dependencies and create a `NURBS_bin` binary.
-
-## Run
-
-From within the `build` directory just issue:
-
-    ./NURBS_bin
-
-A glfw app should launch displaying a Torus surface.
 
 ## examples and results
 1. Cylindrical surface
@@ -66,7 +58,6 @@ A glfw app should launch displaying a Torus surface.
 2. Torus surface
 ![torus.PNG](https://github.com/aijm/NURBS/blob/master/examples/torus.PNG)
 3. Skinned surface and solid
-
 ![representative_image.png](https://github.com/Hubury/TSpline/blob/master/out/representative_image.png)
 
 
